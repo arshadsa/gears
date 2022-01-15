@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
 
 *{
   margin: 0;
@@ -13,15 +13,18 @@ body{
 }
 
 header{
+  margin-top: 180px;
   display: grid;
   grid-template-columns: 0.5fr 0.115fr 0.38fr ;
   align-items: center;
+  /* padding-bottom: 100px; */
 }
 
 header h1{
   font-weight: bold;
   font-size: 52px;
   line-height: 70px;
+  color: #3A3A3A;
 }
 
 header p{
@@ -38,13 +41,21 @@ header a{
   display: inline-block;
   font-weight: bold;
   font-size: 16px;
-  /* line-height: 24px; */
 /* identical to box height */
   color: #FFFFFF;
   padding: 10px 24px;
   border-radius: 41px;
   /* height: 44px; */
   background: #E02C6D;
+}
+
+header{
+  margin-bottom: 100px;
+}
+
+.main-section>h1{
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .blogs{
@@ -56,9 +67,21 @@ header a{
 
 .blog {
   padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.filled{
+  color: goldenrod;
+}
+
+.unfilled{
+  color: lightgrey;
 }
 
 footer{
+  margin-top: 100px;
   padding: 50px 0;
   display: grid;
   place-items: center;
@@ -66,5 +89,53 @@ footer{
   background: #0A0826;
 }
 
+footer h1{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+/* identical to box height */
 
+  font-feature-settings: 'liga' off;
 
+  color: #FFFFFF;
+}
+
+footer p{
+font-family: Manrope;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+font-feature-settings: 'liga' off;
+
+/* Text / Gray 300 */
+
+color: #D9DBE1;
+}
+
+fa-copyright{
+  font-size: 14px;
+}
+
+.icons{
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;  
+}
+
+.icons>div{
+  height: 32px;
+  width: 32px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icons>div>i{
+  color: white;
+}
