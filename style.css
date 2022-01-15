@@ -46,7 +46,7 @@ header p{
   margin: 16px 0;
 }
 
-header a{
+header a, .join-us>div>a{
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
@@ -75,6 +75,11 @@ header a{
 
 header{
   margin-bottom: 100px;
+}
+
+header:hover .header-img1 {
+  transform: scale(1.2) ;
+  transition: transform 2s ease-in-out;
 }
 
 .main-section>h1{
@@ -120,6 +125,23 @@ header{
 
 .unfilled{
   color: lightgrey;
+}
+
+.join-us{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.join-us img{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.join-text p{
+  margin: 20px 0;
 }
 
 footer{
@@ -222,5 +244,13 @@ fa-copyright{
   nav{
     text-align: center;
     margin-top: 35px;
+  }
+
+  .join-us{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .join-text{
+    text-align: center;
   }
 }
