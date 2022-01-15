@@ -49,6 +49,20 @@ header a{
   background: #E02C6D;
 }
 
+.header-img{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  background-image: url("images/circle-design.svg");  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header-img>img{
+  width: 100%;
+}
+
 header{
   margin-bottom: 100px;
 }
@@ -139,3 +153,5 @@ fa-copyright{
 .icons>div>i{
   color: white;
 }
+
+
